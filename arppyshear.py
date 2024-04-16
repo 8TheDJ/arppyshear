@@ -123,7 +123,7 @@ def inputValidation(checkMe):
 #Function to collect user input (network gateway IP address).
 def collectGatewayIP(error, reset):
 	try:
-		gateIn = raw_input("Enter the network gateway IP address (IPv4 format xxx.xxx.xxx.xxx): ")
+		gateIn = input("Enter the network gateway IP address (IPv4 format xxx.xxx.xxx.xxx): ")
 		testValue = inputValidation(gateIn)
 		if testValue is True:
 			return gateIn
@@ -138,7 +138,7 @@ def collectGatewayIP(error, reset):
 #Function to collect user input (network target IP address).
 def collectTargetIP(gateway, error, reset):
 	try:
-		targetIn = raw_input("Enter the network target's IP address (IPv4 format xxx.xxx.xxx.xxx): ")
+		targetIn = input("Enter the network target's IP address (IPv4 format xxx.xxx.xxx.xxx): ")
 		testValue = inputValidation(targetIn)
 		if testValue is True:
 			#Check to see if the target IP address equals the gateway IP address. If so, display
